@@ -83,7 +83,7 @@ class Twitter {
    * @private
    */
   static _handleResponse(response) {
-    const headers = response.headers.raw(); // TODO: see #44
+    const headers = response.headers;
     // Return empty response on 204 "No content"
     if (response.status === 204)
       return {
